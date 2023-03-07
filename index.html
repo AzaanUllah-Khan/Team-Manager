@@ -10,7 +10,7 @@
 
 <body>
     <script>
-        var name = prompt("What do you want to name your Team")
+        var name = prompt("Wjhat do you want to name your Team")
         var teamList = []
         var num = + prompt("How many players do you want to add")
         var flag = false
@@ -29,7 +29,7 @@
             change = "no"
         }
         if (change == "yes" && typeChange == "DELETE") {
-            var remove = prompt("This is Your team which player do you want to remove")
+            var remove = prompt("This is Your team whihc player do you want to remove")
             var index = teamList.indexOf(remove)
             for (let i = 0; i < teamList.length; i++) {
                 if (index !== -1) {
@@ -42,7 +42,7 @@
             }
         }
         else if (change == "yes" && typeChange == "ADD") {
-            var add = prompt("This is Your team which player do you want to add")
+            var add = prompt("This is Your team whihc player do you want to add")
             var index = teamList.indexOf(add)
             for (let i = 0; i < teamList.length; i++) {
                 teamList.push(add); // remove the item from the array
@@ -73,8 +73,10 @@
             }
         }
         else {
-            console.log(name +" = "+teamList)
+            console.log(teamList)
         }
+        document.write("<center>"+"<h1>"+'<table border = "1">'+"<tr>"+"<td>"+name+"</td>"+"</tr>"+"</table>"+"</h1>"+"</center>")
+        document.write("<center>"+"<h1>"+'<table border = "1">'+"<tr>"+"<td>"+teamList+"</td>"+"</table>"+"</h1>"+"</center>")
     </script>
 </body>
 
